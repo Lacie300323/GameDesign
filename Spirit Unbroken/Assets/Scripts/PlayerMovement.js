@@ -45,9 +45,9 @@ function Update () { //Wordt elke fram aangeroepen
 		y = GetComponent(Rigidbody2D).velocity.y;
 		
 		GetComponent(Rigidbody2D).velocity = new Vector2(moveSpeed, y);
-		if(!facingRight)
+		if(!facingRight) //ALs hij niet rechts aan het kijken is, dan moet ie omdraaien
 		{
-			Flip();
+			Flip(); //Roept functie "Flip"
 		}
 	}
 }
